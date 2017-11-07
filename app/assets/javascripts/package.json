@@ -1,0 +1,42 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/jasmine": "^2.5.54",
+    "@types/node": "^8.0.26",
+    "concurrently": "^3.5.0",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.6.0-dev.20170904",
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "@angular/common": "^4.4.0-RC.0",
+    "@angular/compiler": "^4.4.0-RC.0",
+    "@angular/core": "^4.4.0-RC.0",
+    "@angular/forms": "^4.4.0-RC.0",
+    "@angular/http": "^4.4.0-RC.0",
+    "@angular/platform-browser": "^4.4.0-RC.0",
+    "@angular/platform-browser-dynamic": "^4.4.0-RC.0",
+    "@angular/router": "^4.4.0-RC.0",
+    "@angular/upgrade": "^4.4.0-RC.0",
+    "core-js": "^2.5.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.18",
+    "zone.js": "^0.8.17"
+  }
+}

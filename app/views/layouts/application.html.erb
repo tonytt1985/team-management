@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chamay</title>
+
+	 <!-- load the dependencies -->
+	<%= javascript_include_tag 'application' %>
+	<script>
+		System.import('app').catch(function(err) { console.error(err); });
+	</script>
+ 
+</head>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
